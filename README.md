@@ -21,3 +21,7 @@ A simple yet functional task management web app built using HTML, CSS, and Vanil
 8. Dynamic Tagline that appears when no tasks are present.
 
 9. Responsive UI using custom styling for task cards and buttons.
+
+# Tech Stack
+
+HTML, CSS, JavaScript, LocalStorage API for permanent task storage
