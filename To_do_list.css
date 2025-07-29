@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+   background-image: linear-gradient( 109.6deg,  rgba(112,246,255,0.33) 11.2%, rgba(221,108,241,0.26) 42%, rgba(229,106,253,0.71) 71.5%, rgba(123,183,253,1) 100.2% );
+   background-size: cover;
+    padding: 10vh 0 0 0;
+}
+.todolist{
+    width: 70%;
+    height: 85%;
+    margin: auto;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+h2{
+    font-size: 1.7rem;
+    color: rgb(7, 7, 143);
+}
+.heading img{
+    width: 4rem;
+    border-radius: 50%;
+}
+.input{
+    display: flex;
+    background-color: #fff;
+    border-radius: 2rem;
+    margin: 1rem;
+    font-size: 1rem;
+    min-width: 60%;
+}
+#task{
+    padding: 1rem 1rem 1rem 0.3rem;
+    width: 80%;
+    border-radius: 2rem;
+    border: none;
+    background-color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+}
+#task:focus{
+    border: none;
+    outline: none;
+}
+.add{
+    width: 60px;
+    border-radius: 50%;
+    border: none;
+    margin-right: 0.5rem;
+    background-color: rgb(7, 7, 143);
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.list{
+    margin: 1rem 0 0 0;
+    height: 80%;
+    overflow: auto;
+    background-color: none;
+}
+
+.task-box {
+    width: 100%;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 1.5rem 1rem 1rem;
+  
+}
+
+.checker{
+    appearance: none;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    height: 1.5rem;
+    width: 1.5rem;
+    cursor: pointer;
+}
+.checker:checked{
+    background-color: rgb(48, 48, 251);
+}
+.checker:checked + .textOfTask{
+    text-decoration: line-through;
+}
+.checker:checked::after {
+  content: "✔";
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  top: -1px;
+  left: 4px;
+}
+.textOfTask{
+    font-size: 1rem;
+    color: rgb(7, 7, 143);
+}
+.remove{
+    border: none;
+    background-color: transparent;
+    margin-left: auto;    
+}
+
+.tagLine{
+    height: 60%;
+    position: absolute;   
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tagLine p{
+    height: fit-content;
+    max-width: 350px;
+    background-color: #ffffff34;
+    position: relative;
+    padding: 3rem;
+    border-radius: 1rem;
+    color: rgb(182, 88, 236);
+}
+.tagLine p span{
+    font-size: 1.5rem;
+}
+
+
+
+
+@media screen and (max-width: 500px){
+    .todolist{
+       width: 100%;
+       height: 85%;
+       padding: 0.5rem;
+    }
+    .tagLine{
+    height: 60%;
+    margin: auto;
+    position: absolute;   
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
+@media screen and (min-width: 700px){
+    h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+   .tagLine p{
+    padding: 4rem 5rem;
+    font-size: 1rem;
+   }
+}

@@ -1,0 +1,6 @@
+Functionalities of my to-do list
+1.  ADD task in the list
+2.  Check the task when completed
+3.  Remove the task from the list
+4.  It saves the task in the local storage
+5.  Moves checked task to bottom
